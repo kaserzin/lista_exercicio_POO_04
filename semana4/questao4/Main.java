@@ -1,9 +1,5 @@
-
-import semana4.questao4.Boleto;
-import semana4.questao4.CartaoCredito;
-import semana4.questao4.Pagamento;
-import semana4.questao4.Pix;
-
+package semana4.questao4;
+public class Main{
 void main(){
         Pagamento[] pagamentos = {new CartaoCredito(),new Boleto(),new Pix()};
 
@@ -12,3 +8,4 @@ void main(){
         for (Pagamento pagamento : pagamentos) {pagamento.processar(valor);
         }
     }
+}
